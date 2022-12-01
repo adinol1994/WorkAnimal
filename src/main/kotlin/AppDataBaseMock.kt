@@ -4,9 +4,9 @@ class AppDataBaseMock {
     val list = mutableListOf<Animal>()
 
     init {
-        for (i in 0..100){
-            val animal = Animal(id = i, name = "name$i", speeds = i + Random.nextInt(30))
-            list.add(animal)
-        }
+        list.add(Carnivores(7, "cat" , 20, "S124"))
+        list.add(Carnivores(3, "dog" , 80, "P123"))
+        list.add(Herbivores(5,"Horse" , 100, "d344"))
+        list.add(Herbivores(4, "pig" , 20, "a128"))
     }
 }
